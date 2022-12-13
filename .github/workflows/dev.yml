@@ -1,0 +1,16 @@
+on:
+  workflow_call:
+    inputs:
+      prenom:
+        description: 'Le prenom'
+        default: 'john-doe'
+        required: false
+        type: string
+
+jobs:
+  print-prenom:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print the input name to STDOUT
+        run: echo The prenom is ${{ inputs.prenom }}
