@@ -8,9 +8,9 @@ jobs:
   remi-workflow:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello world!"
-      - run: echo "Bonjour tout le monde!"
-      - run: echo "Holà todos!"
+      - run: echo "Hello world! - ${{ github.event_name }}"
+      - run: echo "Bonjour tout le monde! - ${{ github.event_name }}"
+      - run: echo "Holà todos! - ${{ github.event_name }}"
 
       # - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
       # - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
