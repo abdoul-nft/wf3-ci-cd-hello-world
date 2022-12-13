@@ -2,7 +2,7 @@ name: Notre premier workflow
 run-name: ${{ github.actor }} test GitHub Actions 🚀
 on: [push]
 jobs:
-  Explore-GitHub-Actions:
+  Notre-premier-workflow:
     runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
