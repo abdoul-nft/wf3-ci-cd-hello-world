@@ -6,6 +6,8 @@ on:
         default: 'john-doe'
         required: false
         type: string
+    branches:    
+      - dev
 
 jobs:
   print-prenom:
