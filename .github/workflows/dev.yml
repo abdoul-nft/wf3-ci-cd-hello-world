@@ -1,4 +1,7 @@
 on:
+  push:
+    branches:    
+      - dev
   workflow_call:
     inputs:
       prenom:
@@ -6,8 +9,6 @@ on:
         default: 'john-doe'
         required: false
         type: string
-    branches:    
-      - dev
 
 jobs:
   print-prenom:
