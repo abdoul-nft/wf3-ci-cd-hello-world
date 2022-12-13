@@ -1,0 +1,13 @@
+name: nad workflow
+run-name: ${{ github.actor }} fait un ${{ github.event_name }} sur ${{ github.ref }} 🚀
+on:
+  push:
+    branches:    
+      - nad-branch
+jobs:
+  prenom-workflow:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🎉 Hello world - ${{ github.event_name }}."
+      - run: echo "🎉 Bonjour - ${{ github.event_name }}."
+      - run: echo "🎉 Bonjour - ${{ github.event_name }}."
