@@ -1,6 +1,9 @@
 name: Notre premier workflow
 run-name: ${{ github.actor }} fait un ${{ github.event_name }} sur ${{ github.ref }} 🚀
-on: [push]
+on:
+  pull_request:
+    branches:    
+      - main
 jobs:
   Notre-premier-workflow:
     runs-on: ubuntu-latest
