@@ -1,5 +1,5 @@
 name: Notre premier workflow
-run-name: ${{ github.actor }} test GitHub Actions 🚀
+run-name: ${{ github.actor }} fait un ${{ github.event_name }} sur ${{ github.ref }} 🚀
 on: [push]
 jobs:
   Notre-premier-workflow:
