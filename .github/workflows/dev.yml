@@ -7,7 +7,7 @@ on:
       prenom:
         description: 'Le prenom'
         default: 'john-doe'
-        required: false
+        required: true
         type: string
 
 jobs:
