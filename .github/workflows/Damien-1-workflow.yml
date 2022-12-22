@@ -1,3 +1,5 @@
+# Action ON Pull request
+
 name: Notre premier workflow
 run-name: ${{ github.actor }} fait un ${{ github.event_name }} sur ${{ github.ref }} 🚀
 on:
@@ -19,4 +21,3 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
-      - run: echo "nouveau code modifié."
